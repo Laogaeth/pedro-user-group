@@ -215,7 +215,7 @@ div .btn {
     text-decoration: none;
 }
 
-img {
+.user-img {
     height: 150px;
     width:  150px;
     filter: brightness(0) saturate(100%) invert(77%) sepia(49%) saturate(459%) hue-rotate(109deg) brightness(97%) contrast(89%);
