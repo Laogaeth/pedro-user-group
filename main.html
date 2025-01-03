@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main-login">
+<!-- 
+        <div class="title"> <h1> Examples </h1> </div>
+
+        <div class="levels"> 
+
+
+    
+        </div> -->
+
+        <div class="right-login">
+            <div class="formatter">
+                <h2> Not compliant </h2> 
+                <div class="card-login notCompliant">
+                    <img src="/user.png">
+                      
+                    <div class="textfield">
+                        <input type="text" name="user" placeholder="User">
+                    </div>
+                    <div class="textfield">
+                        <input type="password"  name="password" placeholder="Password">
+                    </div>
+                    <div class="login-btns"> 
+                        <div class="btn btn-login">Login</div>
+                        <a aria-label="" href="#" target="_blank" onclick="showAlert()" class="link">Forgot Password</a>  
+                    </div>
+                </div>    
+            </div>
+
+
+            <div class="formatter">
+                <h2>Level A - Basic Keyboard Accessibility</h2>
+                <div class="card-login levelA compliant">
+                    <img src="/user.png" alt="">
+                    <div class="textfield">
+                        <label for="user-levelA">User</label>
+                        <input type="text" id="user-levelA" name="user" placeholder="User">
+                    </div>
+                    <div class="textfield">
+                        <label for="password-levelA">Password</label>
+                        <input type="password" id="password-levelA" name="password" placeholder="Password">
+                    </div>
+                    <div class="login-btns"> 
+                        <button onclick="showAlert()" class="btn-login">Login</button>
+                        <a href="#" onclick="showAlert()" class="link">Forgot Password</a>    
+                    </div>
+                </div>
+            </div>
+
+            <div class="formatter">
+                <h2>Level AAA - Enhanced Keyboard Accessibility</h2>
+                <div class="card-login levelAAA compliant">
+                    <img src="/user.png" alt="">
+                    <div class="textfield">
+                        <label for="user-levelAAA">User</label>
+                        <input type="text" id="user-levelAAA" name="user" placeholder="User">
+                    </div>
+                    <div class="textfield">
+                        <label for="password-levelAAA">Password</label>
+                        <input type="password" id="password-levelAAA" name="password" placeholder="Password">
+                    </div>
+                    <div class="login-btns"> 
+                        <button onclick="showAlert()" class="btn-login">Login</button>
+                        <a href="#" onclick="showAlert()" class="link">Forgot Password</a>    
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </main>
+
+    <script>
+        function showAlert() {
+            alert("Clicked");
+        }
+    </script>
+</body>
+</html>

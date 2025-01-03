@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --color: #77ffc0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.levelA, .levelAAA {
+    margin-top: 20px;
+    padding: 20px;
+    background: #2f2841;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+h2 {
+    color: var(--color);
+}
+
+
+.levelA button:focus, .levelAAA .custom-widget:focus {
+    border-color: #005fcc;
+}
+
+.levelAAA .custom-widget:focus {
+    border-color: #ff8800;
+    background-color: #fff3e0;
+}
+
+.main-login {
+    background: #201b2c;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    margin-top: 250px;
+    color:var(--color);
+}
+
+.left-login > h1 { color: var(--color); }
+
+
+.right-login {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:200px;
+    padding: 0px 100px;
+}
+
+.card-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12px;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.levelAAA .textfield > input {
+    background: #51486980;
+    color: #f0ffff;
+}
+
+.textfield > input::placeholder { 
+    color: #f0ffff94; 
+}
+
+.levelAAA  .textfield > input::placeholder { 
+    color: #f0ffff; 
+}
+
+.textfield > label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: var(--color);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login { width: 85%;}
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login { flex-direction: column; }
+    .left-login { width: 100%; height: auto; }
+        .left-login > h1 { display: none; }
+
+    .right-login { width: 100%; height: auto; }
+    .left-login-img { width: 50vw; }
+    .card-login { width: 90%; }
+}
+
+
+.compliant .textfield input:focus {
+    border: 2px solid #00ff88;
+    outline: none;
+    background-color: #3e3651;
+}
+
+.compliant .btn-login:focus {
+    outline: 2px solid #005fcc;
+    box-shadow: 0 0 5px #005fcc;
+}
+
+
+.compliant.levelAAA .btn-login:focus {
+    outline: 2px solid #ff8800;
+    background-color: #fff3e0;
+    color: #2b134b;
+}
+
+.compliant.levelAAA input:focus ,
+.compliant.levelAAA a:focus {
+    border-color: #ff8800;
+    background-color: #fff3e0;
+    color: black;
+}
+
+.compliant.levelAAA a {
+    padding: 15px;
+}
+
+
+.compliant.levelAAA a:focus {
+    padding: 15px;
+}
+
+.compliant.levelAAA input:focus::placeholder{
+    border-color: #ff8800;
+    background-color: #fff3e0;
+    color: black;
+}
+
+.login-btns {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-secondary {
+    background: none;
+    outline: 1px solid var(--color);
+    color: var(--color) ;
+}
+
+
+div .btn {
+
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+
+}
+
+.compliant .link {
+    color: var(--color);
+}
+.compliant .link :focus{
+    color: var(--color);
+}
+
+.notCompliant .link {
+    color: var(--color);
+    text-decoration: none;
+}
+
+img {
+    height: 150px;
+    width:  150px;
+    filter: brightness(0) saturate(100%) invert(77%) sepia(49%) saturate(459%) hue-rotate(109deg) brightness(97%) contrast(89%);
+}
+
+.formatter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
